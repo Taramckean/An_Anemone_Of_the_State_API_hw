@@ -1,7 +1,13 @@
 const express = require('express');
 const anemoneRouter = new express.Router();
 
-let anemonae = ["Aiptasia", "Heteractis", "Stichodactyla", "Anemonia", "Enthemonae", "Macrodactyla doreensis"];
+// let anemonae = ["Aiptasia", "Heteractis", "Stichodactyla", "Anemonia", "Enthemonae", "Macrodactyla doreensis"];
+let anemonae = [{name: "Aiptasia", commonName: "Enemy anemone"},
+{name: "Heteractis", commonName: "Magnificent sea anemone"},
+{name: "Stichodactyla", commonName:"Giant carpet anemone"},
+{name: "Anemonia", commonName: "Mediterranean snakelocks sea anemone"},
+{name: "Enthemonae", commonName: "Spikey face sea anemone"},
+{name: "Macrodactyla doreensis", commonName: "Long tentacle or corkscrew sea anemone"}];
 
 //index route
 anemoneRouter.get('/', function(req, res){
